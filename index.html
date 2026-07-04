@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 | Fundamentos da Web Dinâmica | Edimilson Lima</title>
+  <meta
+    name="description"
+    content="Página inicial de Edimilson Lima para WDD 131, com perfil pessoal, recursos web e prática de HTML, CSS e JavaScript."
+  >
+  <meta name="author" content="Edimilson Lima">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/base.css">
+  <script src="scripts/obterdatas.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <span id="course-title" class="course-label">WDD 131: Fundamentos da Web Dinâmica</span>
+    <h1>Edimilson Lima</h1>
+    <nav aria-label="Navegação principal">
+      <a href="https://www.linkedin.com/in/iorjunior/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/11?lang=por&id=p28-p30#p28" target="_blank" rel="noopener noreferrer">Escritura</a>
+      <a href="#" aria-label="Projeto final em breve">Projeto Final</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="page-title">Página Inicial</h2>
+
+    <div class="card-grid">
+      <section class="card">
+        <div class="card-heading">
+          <h3>Sobre Mim</h3>
+        </div>
+        <div class="card-content about-layout">
+          <div>
+            <p>
+              Meu nome é Edimilson Lima e sou engenheiro de software. Trabalho com tecnologia
+              e gosto de aprender coisas novas.
+              Esta página foi criada como atividade da disciplina WDD 131 para praticar a base
+              do desenvolvimento web com HTML, CSS e JavaScript.
+            </p>
+            <p>
+              Tenho interesse em desenvolvimento web e meu objetivo é continuar aprendendo e aumentando meu conhecimento.
+            </p>
+          </div>
+          <img class="profile-image" src="imagens/perfil.jpeg" alt="Foto de perfil de Edimilson Lima">
+        </div>
+
+        <div class="location-block">
+          <h4>Maceió, Brasil</h4>
+          <div class="location-layout">
+            <figure>
+              <img class="flag-image" src="imagens/bandeira.jpg" alt="Bandeira do Brasil">
+              <figcaption>Bandeira do Brasil.</figcaption>
+            </figure>
+            <p>
+              Uma curiosidade sobre o Brasil é que ele é o maior país da América do Sul,
+              tanto em território quanto em população.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-heading">
+          <h3>Recursos Web Dev</h3>
+        </div>
+        <div class="card-content">
+          <ul class="resource-list">
+            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+            <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+            <li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">Comunidade Dev.to</a></li>
+            <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
+            <li><a href="https://web.dev/" target="_blank" rel="noopener noreferrer">web.dev</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Edimilson Lima | Brasil</p>
+    <p id="last-modified"></p>
+  </footer>
+</body>
+</html>
