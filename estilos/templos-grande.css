@@ -1,0 +1,35 @@
+@media (min-width: 38rem) {
+  #menu-toggle {
+    display: none;
+  }
+
+  #primary-nav {
+    display: flex !important;
+    width: auto;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  #primary-nav a {
+    border-top: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+  }
+
+  #primary-nav a:hover,
+  #primary-nav a:focus-visible {
+    background-color: var(--accent);
+    color: var(--primary-dark);
+  }
+
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+
+  .image-container {
+    height: 200px;
+  }
+}
