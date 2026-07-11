@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álbum de Imagens dos Templos | WDD 131 | Edimilson Lima</title>
+  <meta name="description" content="Álbum de fotos responsivo dos templos da Igreja de Jesus Cristo dos Santos dos Últimos Dias, desenvolvido por Edimilson Lima para a disciplina WDD 131.">
+  <meta name="author" content="Edimilson Lima">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/templos.css">
+  <link rel="stylesheet" href="estilos/templos-grandes.css" media="(min-width: 38rem)">
+  <script src="scripts/templos.js" defer></script>
+</head>
+<body>  
+  <header>
+    <div class="header-container">
+      <div class="header-logo">Álbum do Templo</div>
+      <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      <nav id="primary-nav" aria-label="Navegação Principal">
+        <a href="#">Página Inicial</a>
+        <a href="#">Antigo</a>
+        <a href="#">Novo</a>
+        <a href="#">Grande</a>
+        <a href="#">Pequeno</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>Página Inicial</h1>
+    <div class="temple-grid">
+      <figure>
+        <div class="image-container">
+          <img src="imagens/sao_paulo_brazil_temple_lds.webp" alt="Templo de São Paulo Brasil, o primeiro templo na América do Sul, com arquitetura clássica e jardins floridos" loading="lazy">
+        </div>
+        <figcaption>São Paulo Brasil</figcaption>
+      </figure>
+      <figure>
+        <div class="image-container">
+          <img src="imagens/porto_alegre_brazil_temple_lds.webp" alt="Templo de Porto Alegre Brasil, localizado em uma colina com vista para a cidade e cercado por gramados verdes" loading="lazy">
+        </div>
+        <figcaption>Porto Alegre Brasil</figcaption>
+      </figure>
+      <figure>
+        <div class="image-container">
+          <img src="imagens/recife_brazil_temple_lds.webp" alt="Templo de Recife Brasil, com seu design clássico e palmeiras tropicais ao redor sob céu claro" loading="lazy">
+        </div>
+        <figcaption>Recife Brasil</figcaption>
+      </figure>
+      <figure>
+        <div class="image-container">
+          <img src="imagens/campinas_brazil_temple_lds.webp" alt="Templo de Campinas Brasil, situado no topo de uma colina com belos jardins e espelho d'água" loading="lazy">
+        </div>
+        <figcaption>Campinas Brasil</figcaption>
+      </figure>
+      <figure>
+        <div class="image-container">
+          <img src="imagens/curitiba_brazil_temple.webp" alt="Templo de Curitiba Brasil, com arquitetura contemporânea e belos pinheiros do Paraná ao fundo" loading="lazy">
+        </div>
+        <figcaption>Curitiba Brasil</figcaption>
+      </figure>
+      <figure>
+        <div class="image-container">
+          <img src="imagens/manaus_brazil_temple_lds.webp" alt="Templo de Manaus Brasil, localizado na região amazônica, cercado por jardins tropicais e árvores nativas" loading="lazy">
+        </div>
+        <figcaption>Manaus Brasil</figcaption>
+      </figure>
+      <figure>
+        <div class="image-container">
+          <img src="imagens/e2a28dbb2b14f5f71d79b359cf9f7b88dc480144.webp" alt="Templo de Fortaleza Brasil, com arquitetura neoclássica e belas palmeiras cearenses decorando o local" loading="lazy">
+        </div>
+        <figcaption>Fortaleza Brasil</figcaption>
+      </figure>
+      <figure>
+        <div class="image-container">
+          <img src="imagens/rio_de_janeiro_brazil_temple.webp" alt="Templo do Rio de Janeiro Brasil, apresentando spires elegantes e paisagismo exuberante com montanhas cariocas" loading="lazy">
+        </div>
+        <figcaption>Rio de Janeiro Brasil</figcaption>
+      </figure>
+      <figure>
+        <div class="image-container">
+          <img src="imagens/belem_brazil_temple_exterior.webp" alt="Templo de Belém Brasil, localizado na entrada da Amazônia, com linhas modernas e jardins floridos" loading="lazy">
+        </div>
+        <figcaption>Belém Brasil</figcaption>
+      </figure>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; <span id="current-year"></span> Edimilson Lima | Brasil</p>
+    <p id="last-modified"></p>
+  </footer>
+</body>
+</html>
