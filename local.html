@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brasil | WDD 131 - Edimilson Lima</title>
+  <meta
+    name="description"
+    content="Página sobre o Brasil. Dados gerais, clima e informações turísticas."
+  >
+  <meta name="author" content="Edimilson Lima">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/local.css">
+  <script src="scripts/local.js" defer></script>
+</head>
+<body>
+  <header class="local-header">
+    <h1>Brasil</h1>
+  </header>
+  <div class="hero-section">
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="imagens/brasil-large.webp"
+        width="1200"
+        height="800"
+      >
+      <img
+        class="hero-img"
+        src="imagens/brasil-small.webp"
+        srcset="imagens/brasil-small.webp 480w, imagens/brasil-large.webp 1200w"
+        sizes="(min-width: 768px) 100vw, 100vw"
+        alt="Paisagem do Brasil com natureza exuberante — floresta e céu azul"
+        width="480"
+        height="320"
+      >
+    </picture>
+    <section class="panel panel-data" aria-labelledby="dados-titulo">
+      <h2 id="dados-titulo">Dados</h2>
+      <dl class="info-list">
+        <dt>Área</dt><dd>8,51 mi. km²</dd>
+        <dt>População</dt><dd>~215 milhões</dd>
+        <dt>Capital</dt><dd>Brasília</dd>
+        <dt>Idioma</dt><dd>Português</dd>
+        <dt>Moeda</dt><dd>Real (BRL)</dd>
+        <dt>Fuso</dt><dd>UTC-3</dd>
+        <dt>Código</dt><dd>+55</dd>
+        <dt>TLD</dt><dd>.br</dd>
+      </dl>
+    </section>
+    <section class="panel panel-weather" aria-labelledby="clima-titulo">
+      <h2 id="clima-titulo" class="weather-title">Clima</h2>
+      <img
+        class="weather-icon-mobile"
+        src="imagens/clima-icon.svg"
+        alt="Ícone de clima parcialmente nublado"
+        width="72"
+        height="72"
+        aria-hidden="true"
+      >
+      <dl class="info-list">
+        <dt>Temperatura</dt><dd id="temperatura">8 °C</dd>
+        <dt>Condição</dt><dd>Parcialmente nublado</dd>
+        <dt>Vento</dt><dd id="vento">20 km/h</dd>
+        <dt>Sensação Térmica</dt><dd id="sensacao-termica">--</dd>
+      </dl>
+    </section>
+  </div>
+  <footer class="local-footer">
+    <p>&copy; <span id="current-year"></span> Edimilson Lima | Brasil</p>
+    <p id="last-modified"></p>
+  </footer>
+</body>
+</html>
