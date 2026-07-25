@@ -1,0 +1,227 @@
+:root {
+  --primary: #3d0c5a;
+  --primary-dark: #27063b;
+  --primary-light: #57167d;
+  --primary-overlay: rgba(61, 12, 90, 0.95);
+  --accent: #ebb600;
+  --accent-light: rgba(235, 182, 0, 0.15);
+  --white: #ffffff;
+  --text: #2b2b2b;
+  --text-muted: #555555;
+  --bg: #f9f6fc;
+  --card-bg: #ffffff;
+  --border-color: #ebdff5;
+  --shadow: 0 4px 12px rgba(61, 12, 90, 0.08);
+  --shadow-hover: 0 10px 25px rgba(61, 12, 90, 0.15);
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--primary);
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4rem, 5vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+#menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 2.2rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+#menu-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+}
+
+#primary-nav {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 1rem;
+  transition: var(--transition);
+}
+
+#primary-nav.open {
+  display: flex;
+}
+
+#primary-nav a {
+  display: block;
+  color: var(--white);
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: var(--transition);
+}
+
+#primary-nav a:hover,
+#primary-nav a:focus-visible,
+#primary-nav a.active {
+  background-color: var(--accent);
+  color: var(--primary-dark);
+  outline: none;
+  font-weight: 600;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+main h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  color: var(--primary-dark);
+  margin-bottom: 2.5rem;
+  position: relative;
+  font-weight: 700;
+}
+
+main h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent);
+  margin: 0.6rem auto 0;
+  border-radius: 2px;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.temple-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.temple-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.temple-card h3 {
+  background-color: var(--primary-light);
+  color: var(--white);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.card-details {
+  padding: 1.25rem 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-details p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.card-details .label {
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.card-image-container {
+  overflow: hidden;
+  width: 100%;
+  height: 220px;
+  background-color: #eae5f0;
+}
+
+.temple-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+  border-top: 3px solid var(--accent);
+}
+
+.temple-card:hover img {
+  transform: scale(1.04);
+}
+
+footer {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-top: 5px solid var(--accent);
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+#last-modified {
+  color: var(--accent);
+  font-weight: 500;
+}
