@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento de Planejamento do Site | AquaGuide | WDD 131</title>
+  <meta name="description" content="Documento de planejamento do site AquaGuide.">
+  <meta name="author" content="Edimilson Lima">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/planejamentodosite.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="brand-wrapper">
+        <img src="imagens/aquaguide-logo.jpg" alt="Logotipo Oficial do AquaGuide" class="brand-logo">
+        <div class="brand-text">
+          <h1>AquaGuide</h1>
+          <p>Documento de Planejamento do Site</p>
+        </div>
+      </div>
+
+      <nav aria-label="Navegação do Planejamento">
+        <ul>
+          <li><a href="#nome-site">Nome & Logotipo</a></li>
+          <li><a href="#finalidade">Finalidade</a></li>
+          <li><a href="#cenarios">Cenários</a></li>
+          <li><a href="#esquema-cores">Esquema de Cores</a></li>
+          <li><a href="#tipografia">Tipografia</a></li>
+          <li><a href="#wireframe">Wireframes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="nome-site" class="plan-section">
+      <h2>1. Nome do Site & Logotipo</h2>
+      <p>
+        O identificador principal do projeto é o nome da marca juntamente com o seu logotipo e domínio sugerido.
+      </p>
+      <div class="site-identity-grid">
+        <div class="logo-display-card">
+          <img src="imagens/aquaguide-logo.jpg" alt="Logotipo do AquaGuide com peixe de água doce em gota d'água">
+          <span class="domain-badge">aquaguide.org</span>
+        </div>
+        <div>
+          <h3>AquaGuide • Catálogo Interativo de Peixes de Água Doce</h3>
+          <p>
+            <strong>Razão da Escolha:</strong> Escolhi o nome <strong>AquaGuide</strong> porque ele une o prefixo <em>"Aqua"</em> (relativo ao aquarismo e ecossistemas de água doce) à palavra <em>"Guide"</em> (guia/catálogo), transmitindo imediatamente a proposta do site aos aquaristas.
+          </p>
+          <p>
+            O nome reflete um portal moderno, acessível e educativo projetado para orientar criadores de peixes na escolha de espécies compatíveis de acordo com parâmetros de pH, tamanho e temperamento do aquário.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="finalidade" class="plan-section">
+      <h2>2. Finalidade do Site</h2>
+      <p>
+        A finalidade do <strong>AquaGuide</strong> é fornecer um centro informativo interativo e intuitivo para hobbistas e criadores de peixes de água doce. O site visa resolver um dos maiores desafios do aquarismo: a escolha de espécies compatíveis que convivam em harmonia e saúde.
+      </p>
+      <p>
+        <strong>Serviços e Informações Prestadas:</strong>
+      </p>
+      <ul>
+        <li><strong>Catálogo Dinâmico de Espécies:</strong> Exibição detalhada de peixes de água doce com fotos otimizadas, temperamento (comunitário, semi-agressivo, agressivo), tamanho adulto e faixa ideal de pH.</li>
+        <li><strong>Filtros Interativos via JavaScript:</strong> Filtragem em tempo real permitindo ao usuário encontrar peixes adequados às condições específicas de seu aquário.</li>
+        <li><strong>Gestão de Favoritos Persistida:</strong> Funcionalidade que permite ao usuário salvar seus peixes favoritos em uma lista personalizada armazenada no <code>localStorage</code> do navegador.</li>
+        <li><strong>Formulário de Sugestões de Espécies:</strong> Formulário de contato validado para que a comunidade possa sugerir novas espécies de peixes para o catálogo.</li>
+      </ul>
+    </section>
+    <section id="cenarios" class="plan-section">
+      <h2>3. Cenários de Usuário</h2>
+      <p>
+        Cenários representam dúvidas e situações reais de pessoas do público-alvo (aquaristas iniciantes e experientes) ao visitar o site. O conteúdo do AquaGuide foi planejado para responder diretamente a estes cenários:
+      </p>
+      <div class="scenario-list">
+        <article class="scenario-card">
+          <h4>Cenário 1: Aquarista Iniciante montando seu primeiro aquário</h4>
+          <p>
+            &ldquo;Tenho um aquário comunitário de 50 litros com pH neutro (6.8 a 7.0). Quais peixes pequenos e pacíficos posso colocar sem o risco de brigas entre espécies?&rdquo;
+          </p>
+        </article>
+        <article class="scenario-card">
+          <h4>Cenário 2: Consulta rápida no celular durante a compra</h4>
+          <p>
+            &ldquo;Como posso selecionar peixes no catálogo e salvá-los na minha lista de Favoritos para consultar no celular enquanto estou presencialmente na loja de aquarismo?&rdquo;
+          </p>
+        </article>
+        <article class="scenario-card">
+          <h4>Cenário 3: Colaboração e envio de novas espécies</h4>
+          <p>
+            &ldquo;Conheço uma espécie de peixe de água doce fascinante que ainda não está no catálogo. Onde e como posso sugerir a inclusão dessa espécie informando os parâmetros técnicos?&rdquo;
+          </p>
+        </article>
+      </div>
+    </section>
+    <section id="esquema-cores" class="plan-section">
+      <h2>4. Esquema de Cores</h2>
+      <p>
+        O esquema de cores foi escolhido para remeter à sensação de água límpida, profundidade aquática e natureza tropical. As cores selecionadas garantem excelente contraste visual e legibilidade (padrão WCAG AAA/AA).
+      </p>
+      <p>
+        <em>Nota: Este próprio documento de planejamento utiliza rigorosamente a paleta de cores apresentada abaixo!</em>
+      </p>
+      <div class="color-palette-grid">
+        <article class="color-swatch-card">
+          <div class="swatch-color-box" style="background-color: #0B2545;">
+            <span>#0B2545</span>
+          </div>
+          <div class="swatch-info">
+            <h4>Azul Oceano Profundo</h4>
+            <p><strong>Aplicação:</strong> Cabeçalho (header), rodapé (footer), títulos principais (H1/H2) e elementos de marca.</p>
+          </div>
+        </article>
+        <article class="color-swatch-card">
+          <div class="swatch-color-box" style="background-color: #134074;">
+            <span>#134074</span>
+          </div>
+          <div class="swatch-info">
+            <h4>Azul Marinho Médio</h4>
+            <p><strong>Aplicação:</strong> Subtítulos (H3), bordas de destaque, navegação secundária e estados de foco.</p>
+          </div>
+        </article>
+        <article class="color-swatch-card">
+          <div class="swatch-color-box" style="background-color: #00A896;">
+            <span>#00A896</span>
+          </div>
+          <div class="swatch-info">
+            <h4>Ciano Água / Teal</h4>
+            <p><strong>Aplicação:</strong> Botões de ação (CTA), links, linha divisória de títulos, badges ativas de filtro.</p>
+          </div>
+        </article>
+        <article class="color-swatch-card">
+          <div class="swatch-color-box" style="background-color: #1D2D44;">
+            <span>#1D2D44</span>
+          </div>
+          <div class="swatch-info">
+            <h4>Azul Escuro Grafite</h4>
+            <p><strong>Aplicação:</strong> Texto principal do corpo da página para máximo contraste e conforto de leitura.</p>
+          </div>
+        </article>
+        <article class="color-swatch-card">
+          <div class="swatch-color-box" style="background-color: #F4F9F9; color: #1D2D44;">
+            <span style="background-color: rgba(255,255,255,0.8); color: #1D2D44;">#F4F9F9</span>
+          </div>
+          <div class="swatch-info">
+            <h4>Mofo de Água Claro</h4>
+            <p><strong>Aplicação:</strong> Fundo geral da página e cartões de destaque leve.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="tipografia" class="plan-section">
+      <h2>5. Tipografia</h2>
+      <p>
+        Selecionamos duas famílias de fontes contemporâneas do Google Fonts para criar uma hierarquia visual clara, moderna e legível em múltiplos dispositivos.
+      </p>
+      <div class="typography-sample-container">
+        <article class="typography-card">
+          <h3>Fonte Principal dos Títulos: Outfit (Sans-Serif)</h3>
+          <p><strong>Aplicação:</strong> Utilizada em todos os títulos (H1, H2, H3), logotipo, nomes de botões e destaques de cabeçalho.</p>
+          <div class="font-preview-heading">
+            AquaGuide: Catálogo Interativo de Peixes (Aa Bb Cc 123)
+          </div>
+          <p><em>Pesos selecionados: Semibold (600) e Bold (700).</em></p>
+        </article>
+        <article class="typography-card">
+          <h3>Fonte do Corpo de Texto: Plus Jakarta Sans (Sans-Serif)</h3>
+          <p><strong>Aplicação:</strong> Utilizada no texto corrido dos parágrafos, listas, legendas, cartões de peixes e campos de formulário.</p>
+          <div class="font-preview-body">
+            O Neoncruzado (Paracheirodon innesi) é uma das espécies mais populares de peixes de água doce. Prefere aquários bem plantados com pH entre 6.0 e 7.0 e temperatura de 24°C a 28°C.
+          </div>
+          <p><em>Pesos selecionados: Regular (400), Medium (500) e Semibold (600).</em></p>
+        </article>
+      </div>
+    </section>
+    <section id="wireframe" class="plan-section">
+      <h2>6. Wireframe da Página Inicial</h2>
+      <p>
+        Os wireframes abaixo ilustram a organização de layout planejada para a página inicial (Home) do AquaGuide, demonstrando a adaptação responsiva tanto para dispositivos móveis (Mobile View) quanto para computadores (Desktop Wide View).
+      </p>
+
+      <div class="wireframes-grid">
+
+        <article class="wireframe-box">
+          <h4>Visualização Móvel (Mobile View)</h4>
+          <img src="imagens/wireframe-mobile.png" alt="Esboço de Wireframe do site em tela móvel (Mobile View)">
+        </article>
+
+        <article class="wireframe-box">
+          <h4>Visualização Computador (Desktop Wide View)</h4>
+          <img src="imagens/wireframe-desktop.png" alt="Esboço de Wireframe do site em tela desktop (Desktop Wide View)">
+        </article>
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="current-year">2026</span> AquaGuide • Edimilson Lima | Brasil</p>
+    <p>Projeto de Desenvolvimentos Web — WDD 131</p>
+  </footer>
+</body>
+</html>
