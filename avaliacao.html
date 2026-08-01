@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmação de Avaliação | WDD 131</title>
+  <meta name="description" content="Página de confirmação de envio do formulário de avaliação de produto.">
+  <meta name="author" content="Edimilson Lima">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/formulario.css">
+  <script src="scripts/review.js" defer></script>
+  <script src="scripts/obterdatas.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Avaliação do Produto</h1>
+  </header>
+  <main>
+    <section class="form-card confirmation-card">
+      <h2>Obrigado pela sua Avaliação!</h2>
+      <p>Sua opinião é muito importante para nós e ajuda a melhorar a qualidade dos nossos produtos.</p>
+      <div class="counter-box">
+        <p>Total de avaliações enviadas neste navegador:</p>
+        <span id="review-count">1</span>
+      </div>
+      <a href="formulario.html" class="btn-link">Enviar outra avaliação</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="current-year"></span> Edimilson Lima | Brasil</p>
+    <p id="last-modified"></p>
+  </footer>
+</body>
+</html>

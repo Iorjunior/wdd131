@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação do Produto | WDD 131</title>
+  <meta name="description" content="Formulário de avaliação de produto.">
+  <meta name="author" content="Edimilson Lima">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/formulario.css">
+  <script src="scripts/form.js" defer></script>
+  <script src="scripts/obterdatas.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Avaliação do Produto</h1>
+  </header>
+  <main>
+    <section class="form-card">
+      <form method="get" action="avaliacao.html">
+      
+        <div class="form-group">
+          <label for="productName">Nome do Produto</label>
+          <select id="productName" name="productName" required>
+            <option value="" disabled selected>Selecione um Produto...</option>
+          </select>
+        </div>
+        <fieldset class="rating-fieldset">
+          <legend>Classificação Geral</legend>
+          <div class="rating-options">
+            <div class="rating-item">
+              <span class="stars" aria-hidden="true">☆</span>
+              <input type="radio" id="rating1" name="rating" value="1" required aria-label="1 estrela">
+            </div>
+            <div class="rating-item">
+              <span class="stars" aria-hidden="true">☆☆</span>
+              <input type="radio" id="rating2" name="rating" value="2" required aria-label="2 estrelas">
+            </div>
+            <div class="rating-item">
+              <span class="stars" aria-hidden="true">☆☆☆</span>
+              <input type="radio" id="rating3" name="rating" value="3" required aria-label="3 estrelas">
+            </div>
+            <div class="rating-item">
+              <span class="stars" aria-hidden="true">☆☆☆☆</span>
+              <input type="radio" id="rating4" name="rating" value="4" required aria-label="4 estrelas">
+            </div>
+            <div class="rating-item">
+              <span class="stars" aria-hidden="true">☆☆☆☆☆</span>
+              <input type="radio" id="rating5" name="rating" value="5" required aria-label="5 estrelas">
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-group">
+          <label for="installationDate">Data de Instalação</label>
+          <input type="date" id="installationDate" name="installationDate" required>
+        </div>
+        <fieldset class="checkbox-fieldset">
+          <legend>Quais recursos você achou úteis no produto?</legend>
+          <span class="field-hint">(Marque todos que se aplicam)</span>
+          <div class="checkbox-group">
+            <div class="checkbox-item">
+              <input type="checkbox" id="durability" name="features" value="durability">
+              <label for="durability">Durabilidade</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="easeOfUse" name="features" value="easeOfUse">
+              <label for="easeOfUse">Facilidade de Uso</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="performance" name="features" value="performance">
+              <label for="performance">Desempenho</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="design" name="features" value="design">
+              <label for="design">Design</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-group">
+          <label for="writtenReview">Avaliação Escrita <span class="optional-text">(Opcional)</span></label>
+          <textarea id="writtenReview" name="writtenReview" placeholder="Escreva sua opinião sobre o produto..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="userName">Seu Nome <span class="optional-text">(Opcional)</span></label>
+          <input type="text" id="userName" name="userName" placeholder="Ex: Maria Silva">
+        </div>
+        <div class="form-group">
+          <input type="submit" id="submitBtn" value="Publicar Avaliação">
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="current-year"></span> Edimilson Lima | Brasil</p>
+    <p id="last-modified"></p>
+  </footer>
+</body>
+</html>
