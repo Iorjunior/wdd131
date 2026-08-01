@@ -136,6 +136,8 @@ textarea {
 .rating-item .stars {
   font-size: 0.9rem;
   letter-spacing: -1px;
+  margin-bottom: 0;
+  cursor: pointer;
 }
 
 .rating-item input[type="radio"] {
