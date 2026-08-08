@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaGuide — Catálogo Interativo de Peixes de Água Doce</title>
+  <meta name="description" content="O AquaGuide é um guia visual interativo de peixes de água doce para aquaristas. Explore espécies, filtre por tamanho, temperamento e pH, e salve seus favoritos.">
+  <meta name="author" content="Edimilson Lima">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="AquaGuide — Página Inicial">
+        <img src="imagens/aquaguide-logo.jpg" alt="Logotipo do AquaGuide" class="brand-logo" width="48" height="48">
+        <div>
+          <span class="brand-name">AquaGuide</span>
+          <span class="brand-tagline">Catálogo de Água Doce</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" id="nav-toggle-btn">
+        <span class="hamburger" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">🏠 Home</a></li>
+          <li><a href="catalogo.html">🐟 Catálogo</a></li>
+          <li><a href="favoritos.html">⭐ Favoritos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-bg" role="img" aria-label="Aquário de água doce com plantas tropicais e peixes coloridos"></div>
+    <div class="hero-bubbles" aria-hidden="true">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" aria-label="Guia especializado">
+        🐠 Guia Especializado em Aquarismo
+      </div>
+      <h1 id="hero-title">
+        Descubra o <span>Peixe Ideal</span><br>para o seu Aquário
+      </h1>
+      <p>
+        O AquaGuide reúne espécies de água doce com informações detalhadas sobre pH, temperamento e tamanho — tudo para você montar um aquário harmonioso.
+      </p>
+      <div class="hero-cta">
+        <a href="catalogo.html" class="btn btn-primary" id="btn-hero-catalogo">
+          🔍 Explorar Catálogo
+        </a>
+        <a href="favoritos.html" class="btn btn-outline" id="btn-hero-favoritos">
+          ⭐ Meus Favoritos
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Rolar</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </section>
+  <div class="stats-bar" aria-label="Estatísticas do catálogo">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-number">12+</span>
+        <span class="stat-label">Espécies</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Filtros Interativos</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Água Doce</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">∞</span>
+        <span class="stat-label">Favoritos Salvos</span>
+      </div>
+    </div>
+  </div>
+  <main id="main-content">
+    <section class="section" aria-labelledby="benefits-title">
+      <div class="section-header">
+        <span class="section-eyebrow">Por que usar</span>
+        <h2 id="benefits-title">Tudo que você precisa para o seu aquário</h2>
+        <p>Ferramentas simples e informações confiáveis para aquaristas iniciantes e experientes.</p>
+      </div>
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <div class="benefit-icon" aria-hidden="true">🔬</div>
+          <h3>Dados Técnicos Precisos</h3>
+          <p>Cada espécie traz pH ideal, temperatura, tamanho adulto e temperamento para auxiliar na sua escolha.</p>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-icon" aria-hidden="true">⚡</div>
+          <h3>Filtros em Tempo Real</h3>
+          <p>Filtre peixes instantaneamente por tamanho, temperamento ou faixa de pH compatível com seu aquário.</p>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-icon" aria-hidden="true">⭐</div>
+          <h3>Lista de Favoritos</h3>
+          <p>Salve suas espécies preferidas. Seus favoritos são armazenados localmente e persistem entre sessões.</p>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-icon" aria-hidden="true">📱</div>
+          <h3>Totalmente Responsivo</h3>
+          <p>Consulte o catálogo do celular enquanto estiver na loja de aquarismo — interface otimizada para mobile.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section featured-section" aria-labelledby="featured-title">
+      <div class="section-header">
+        <span class="section-eyebrow">Populares para iniciantes</span>
+        <h2 id="featured-title">Espécies em Destaque</h2>
+        <p>Peixes perfeitos para quem está começando no aquarismo de água doce.</p>
+      </div>
+      <div class="fish-highlights">
+        <article class="fish-highlight-card">
+          <div class="fish-img-wrapper">
+            <img
+              src="imagens/peixes/neon-tetra.jpg"
+              alt="Neon Tetra (Paracheirodon innesi) — peixe com listras azul neon e vermelha"
+              loading="lazy"
+              width="400" height="300"
+            >
+            <span class="fish-badge">⭐ Popular</span>
+          </div>
+          <div class="fish-highlight-body">
+            <h3>Neon Tetra</h3>
+            <p class="fish-scientific">Paracheirodon innesi</p>
+            <div class="fish-meta-tags">
+              <span class="tag temperamento-comunitario">🕊️ Comunitário</span>
+              <span class="tag">📏 Pequeno (4 cm)</span>
+              <span class="tag">💧 pH 6.0–7.0</span>
+            </div>
+            <a href="catalogo.html" class="btn btn-outline btn-sm">Ver no Catálogo →</a>
+          </div>
+        </article>
+        <article class="fish-highlight-card">
+          <div class="fish-img-wrapper">
+            <img
+              src="imagens/peixes/guppy.jpg"
+              alt="Guppy macho (Poecilia reticulata) com cauda colorida e vibrante"
+              loading="lazy"
+              width="400" height="300"
+            >
+            <span class="fish-badge">🔰 Ideal p/ Iniciantes</span>
+          </div>
+          <div class="fish-highlight-body">
+            <h3>Guppy</h3>
+            <p class="fish-scientific">Poecilia reticulata</p>
+            <div class="fish-meta-tags">
+              <span class="tag temperamento-comunitario">🕊️ Comunitário</span>
+              <span class="tag">📏 Pequeno (6 cm)</span>
+              <span class="tag">💧 pH 6.5–8.5</span>
+            </div>
+            <a href="catalogo.html" class="btn btn-outline btn-sm">Ver no Catálogo →</a>
+          </div>
+        </article>
+        <article class="fish-highlight-card">
+          <div class="fish-img-wrapper">
+            <img
+              src="imagens/peixes/betta.jpg"
+              alt="Betta splendens macho com nadadeiras longas em azul e vermelho"
+              loading="lazy"
+              width="400" height="300"
+            >
+            <span class="fish-badge">👑 Majestoso</span>
+          </div>
+          <div class="fish-highlight-body">
+            <h3>Betta</h3>
+            <p class="fish-scientific">Betta splendens</p>
+            <div class="fish-meta-tags">
+              <span class="tag temperamento-agressivo">⚔️ Agressivo</span>
+              <span class="tag">📏 Pequeno (7 cm)</span>
+              <span class="tag">💧 pH 6.0–7.5</span>
+            </div>
+            <a href="catalogo.html" class="btn btn-outline btn-sm">Ver no Catálogo →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="steps-title">
+      <div class="section-header">
+        <span class="section-eyebrow">É simples assim</span>
+        <h2 id="steps-title">Como usar o AquaGuide</h2>
+        <p>Em três passos, encontre os peixes certos para o seu aquário.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number" aria-hidden="true">1</div>
+          <h3>Acesse o Catálogo</h3>
+          <p>Navegue pelas espécies cadastradas com fotos, descrições e parâmetros técnicos detalhados.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number" aria-hidden="true">2</div>
+          <h3>Use os Filtros</h3>
+          <p>Filtre por tamanho, temperamento (comunitário, semi-agressivo ou agressivo) e faixa de pH.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number" aria-hidden="true">3</div>
+          <h3>Salve Favoritos</h3>
+          <p>Marque os peixes que te interessam e acesse sua lista de favoritos a qualquer momento, mesmo offline.</p>
+        </div>
+      </div>
+    </section>
+    <div class="cta-banner" role="complementary" aria-labelledby="cta-title">
+      <h2 id="cta-title">Pronto para montar seu aquário dos sonhos?</h2>
+      <p>Explore mais de 12 espécies catalogadas e descubra combinações perfeitas de peixes.</p>
+      <a href="catalogo.html" class="btn btn-primary" id="btn-cta-catalogo">🐟 Ver Catálogo Completo</a>
+    </div>
+
+  </main>
+  <footer class="site-footer">
+    <nav class="footer-links" aria-label="Links do rodapé">
+      <a href="index.html">Home</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="favoritos.html">Favoritos</a>
+    </nav>
+    <p>© <span id="footer-year"></span> AquaGuide • Edimilson Lima | Brasil</p>
+    <p>Projeto de Desenvolvimento Web — WDD 131 | BYU Idaho</p>
+  </footer>
+
+  <script>
+    const navBtn = document.getElementById('nav-toggle-btn');
+    const siteNav = document.getElementById('site-nav');
+    navBtn.addEventListener('click', () => {
+      const isOpen = siteNav.classList.toggle('open');
+      navBtn.setAttribute('aria-expanded', isOpen);
+    });
+
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
